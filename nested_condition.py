@@ -8,7 +8,7 @@ username = input("Enter your username: ")
 password = input("Enter your password: ")
 
 if username == "admin":
-    if password == "password333":
+    if password == "password334":
         print("Login successful.")
     else:
         print("Incorrect password.")
