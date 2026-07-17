@@ -1,7 +1,10 @@
-
+from django.contrib import admin
 from django.urls import path
-from .Views import Myfirstproject
-
+from .form import InputForm
+from .views import index
+from .view import home_view
 urlpatterns = [
-    path('',  Myfirstproject, name='home'),
+    path('', index),
+    path('admin/', admin.site.urls),
+    path('home/', home_view, name='home'),
 ]
